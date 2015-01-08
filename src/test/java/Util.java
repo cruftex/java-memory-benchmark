@@ -34,6 +34,7 @@ public class Util {
     long _total;
     long _total2;
     long _count = -1;
+    // loop to get a stable reading, since memory may be resized between the method calls
     do {
       _count++;
       _total = Runtime.getRuntime().totalMemory();
